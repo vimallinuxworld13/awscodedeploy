@@ -8,13 +8,12 @@ phases:
             - echo "installing something"
     pre_build:
         commands: 
-            - echo "we are in the pre build phase"
+            - echo "pre build phase"
     build:
         commands:
-            - echo "we are in the build block"
-            - echo "we will run some tests"
-            - grep -Fq "Congratulations" index.html
+            - echo "we will run some tests and build"
+            - grep -i LW index.html
     post_build:
         commands:
-            - echo "we are in the post build phase"
+            - echo "post build phase"
             
